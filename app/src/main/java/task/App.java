@@ -145,7 +145,7 @@ public class App {
         int maxUrlsPerPage = Integer.parseInt(args[2]);
         boolean crossLevelUniqueness = Boolean.parseBoolean(args[3]);
 
-        App crawler = new App(startUrl, maxDepth, maxUrlsPerPage, crossLevelUniqueness);
-        crawler.startDigging();
+        App app = new App(startUrl, maxDepth, maxUrlsPerPage, crossLevelUniqueness);
+        app.startDigging();
     }
 }
